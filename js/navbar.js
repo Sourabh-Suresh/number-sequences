@@ -14,7 +14,7 @@ document.getElementById("header").innerHTML = `
                         <li class="nav-item"><a class="nav-link" href="gp.html">GP</a></li>
                         <li class="nav-item"><a class="nav-link" href="fibonacci.html">Fibonacci</a></li>
                     </ul>
-                </div>
+                </div> 
 
             </div>
         </nav>
