@@ -15,6 +15,16 @@ function generateGP(a1, r, n)
     return gp;
 }
 
+function generateFibonacci(n)
+{
+    let fibonacci = [];
+    let a = 1, b = 1;
+    while (n-- > 0) {
+        fibonacci.push(a);
+        [a, b] = [b, a+b];
+    }
+    return fibonacci;
+}
 
 
 document.getElementById("seqForm").addEventListener("submit", function(e) {
@@ -40,6 +50,13 @@ document.getElementById("seqForm").addEventListener("submit", function(e) {
             return;
         }
         sequence = generateGP(a1, r, n);
+    }
+    else if (page == "fibonacci") {
+        const n = parseFloat(document.getElementById("n").value);
+        if (isNaN(n)) {
+            return;
+        }
+        sequence = generateFibonacci(n);
     }
 
     document.getElementById("sequence-result").textContent = sequence.join(", ");

@@ -12,6 +12,7 @@ document.getElementById("header").innerHTML = `
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="ap.html">AP</a></li>
                         <li class="nav-item"><a class="nav-link" href="gp.html">GP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fibonacci.html">Fibonacci</a></li>
                     </ul>
                 </div>
 
