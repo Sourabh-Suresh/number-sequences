@@ -1,0 +1,94 @@
+.custom-navbar {
+  background-color: #0044cc;
+}
+
+.custom-navbar .nav-link {
+  color: white;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffdd57;
+}
+
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2C3E50;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #f0f4f8, #e8edf3);
+}
+
+
+/* Abstract background circles */
+.abstract-bg .circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+.circle1 { width: 300px; height: 300px; background: #ff6f61; top: -50px; left: -50px; }
+.circle2 { width: 400px; height: 400px; background: #6c5ce7; bottom: -100px; right: -100px; }
+.circle3 { width: 200px; height: 200px; background: #00cec9; top: 200px; right: -80px; }
+
+.bg-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1; /* make sure cards appear above background */
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #1F3B5D;
+}
+
+.card-section {
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  background: #ffffffcc;
+}
+
+
+/* Gradient cards */
+.gradient-def { background: linear-gradient(135deg, #FDE2FF, #FFF0F5); }
+.gradient-eq { background: linear-gradient(135deg, #FFF3E0, #FFEBD5); }
+.gradient-res { background: linear-gradient(135deg, #E0F3FF, #D6ECFF); border-left: 5px solid #1F78B4; }
+
+
+.card-section p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.equation {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#sequence-result {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
